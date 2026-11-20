@@ -33,8 +33,8 @@ class HomeController extends Controller
                 'official_docs'   => 'https://bongo.nobotech.org',
                 'packages_hub'    => 'https://bongo.nobotech.org/packages',
                 'benchmarks'      => 'https://bongo.nobotech.org/benchmarks',
-                'core_github'     => 'https://github.com/Solayman/bongo-php',
-                'packages_github' => 'https://github.com/Solayman/bongo-php-packages',
+                'core_github'     => 'https://github.com/nobotech-labs/bongo-php',
+                'packages_github' => 'https://github.com/nobotech-labs/bongo-php-packages',
             ],
         ]);
     }

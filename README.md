@@ -12,13 +12,13 @@ A full-stack, enterprise-grade web application framework crafted in ~720 KB of c
 [![Test Suite](https://img.shields.io/badge/automated%20tests-410%20passing%20(1784%20assertions)-brightgreen?style=flat-square)](TESTING_GUIDE.md)
 [![Memory Footprint](https://img.shields.io/badge/RAM%20per%20request-0.77%20MB-success?style=flat-square)](#-performance--benchmarks)
 [![Core Size](https://img.shields.io/badge/core%20size-~720%20KB-informational?style=flat-square)](#-performance--benchmarks)
-[![Official Packages](https://img.shields.io/badge/official%20packages-50%20available-blueviolet?style=flat-square)](https://github.com/Solayman/bongo-php-packages)
+[![Official Packages](https://img.shields.io/badge/official%20packages-50%20available-blueviolet?style=flat-square)](https://github.com/nobotech-labs/bongo-php-packages)
 [![Hosting Ready](https://img.shields.io/badge/hosting-cPanel%20%7C%20VPS%20%7C%20Docker-blue?style=flat-square)](#-deploy-anywhere)
 [![Localization](https://img.shields.io/badge/i18n-English%20%7C%20বাংলা-orange?style=flat-square)](DOCUMENTATION.md#localization)
 [![License](https://img.shields.io/badge/license-MIT-blue?style=flat-square)](LICENSE)
 [![Facebook Community](https://img.shields.io/badge/Facebook-Nobotech%20Labs-1877F2?style=flat-square&logo=facebook&logoColor=white)](https://www.facebook.com/profile.php?id=61595418016860)
 
-[**Official Website**](https://nobotech.org) • [**Documentation Portal**](https://bongo.nobotech.org) • [**50 Official Packages**](https://bongo.nobotech.org/packages) • [**Packages on GitHub**](https://github.com/Solayman/bongo-php-packages) • [**Live Benchmarks**](https://bongo.nobotech.org/benchmarks) • [**Why Bongo?**](WHY_BONGO.md) • [**Facebook Community**](https://www.facebook.com/profile.php?id=61595418016860)
+[**Official Website**](https://nobotech.org) • [**Documentation Portal**](https://bongo.nobotech.org) • [**50 Official Packages**](https://bongo.nobotech.org/packages) • [**Packages on GitHub**](https://github.com/nobotech-labs/bongo-php-packages) • [**Live Benchmarks**](https://bongo.nobotech.org/benchmarks) • [**Why Bongo?**](WHY_BONGO.md) • [**Facebook Community**](https://www.facebook.com/profile.php?id=61595418016860)
 
 </div>
 
@@ -46,7 +46,7 @@ The `release` branch provides a clean, production-ready starter skeleton (**~800
 
 ```bash
 # 1. Clone the clean starter skeleton
-git clone -b release https://github.com/Solayman/bongo-php.git my-app && cd my-app
+git clone -b release https://github.com/nobotech-labs/bongo-php.git my-app && cd my-app
 
 # 2. Configure environment (Windows: copy .env.example .env)
 cp .env.example .env
@@ -69,7 +69,7 @@ If you are evaluating Bongo's complete ecosystem (E-Commerce Storefront, Blog CM
 
 ```bash
 # 1. Clone the official testbed repository
-git clone https://github.com/Solayman/bongo-package-and-feature-test.git testbed && cd testbed
+git clone https://github.com/nobotech-labs/bongo-package-and-feature-test.git testbed && cd testbed
 
 # 2. Configure environment (Windows: copy .env.example .env)
 cp .env.example .env
@@ -293,7 +293,7 @@ Stay connected with the Nobo Tech community, get technical assistance, report is
 * **Official Facebook Page:** [Nobotech Labs on Facebook](https://www.facebook.com/profile.php?id=61595418016860) — Announcements, tutorials, and community discussions.
 * **Official Website:** [nobotech.org](https://nobotech.org) — Official company portal, philosophy, and products.
 * **Documentation Portal:** [bongo.nobotech.org](https://bongo.nobotech.org) — In-depth guides, API reference, and tutorials.
-* **Official Packages Repository:** [Solayman/bongo-php-packages](https://github.com/Solayman/bongo-php-packages) — Monorepo of all 50 official zero-dependency packages.
+* **Official Packages Repository:** [nobotech-labs/bongo-php-packages](https://github.com/nobotech-labs/bongo-php-packages) — Monorepo of all 50 official zero-dependency packages.
 * **Online Package Explorer:** [bongo.nobotech.org/packages](https://bongo.nobotech.org/packages) — Interactive visual browser for packages.
 * **Lead Architect:** Engineered with precision by **Solayman Ali** ([ratonmsa@gmail.com](mailto:ratonmsa@gmail.com)).
 * **Support Email:** [support@nobotech.org](mailto:support@nobotech.org) · **Admin Email:** [admin@nobotech.org](mailto:admin@nobotech.org)

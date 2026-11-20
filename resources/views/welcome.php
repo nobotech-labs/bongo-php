@@ -413,7 +413,7 @@
                 <li><a href="https://bongo.nobotech.org" target="_blank" rel="noopener">Documentation ↗</a></li>
                 <li><a href="https://bongo.nobotech.org/packages" target="_blank" rel="noopener">50 Packages ↗</a></li>
                 <li><a href="https://bongo.nobotech.org/benchmarks" target="_blank" rel="noopener">Benchmarks ↗</a></li>
-                <li><a href="https://github.com/Solayman/bongo-php" target="_blank" rel="noopener">GitHub ↗</a></li>
+                <li><a href="https://github.com/nobotech-labs/bongo-php" target="_blank" rel="noopener">GitHub ↗</a></li>
             </ul>
         </div>
     </nav>
@@ -440,7 +440,7 @@
                 <a href="https://bongo.nobotech.org/packages" target="_blank" rel="noopener" class="btn btn-secondary">
                     <span>50 Official Packages</span>
                 </a>
-                <a href="https://github.com/Solayman/bongo-php/blob/master/DOCUMENTATION.md" target="_blank" rel="noopener" class="btn btn-secondary">
+                <a href="https://github.com/nobotech-labs/bongo-php/blob/master/DOCUMENTATION.md" target="_blank" rel="noopener" class="btn btn-secondary">
                     <span>Git Repo DOCUMENTATION.md</span>
                 </a>
             </div>
@@ -562,22 +562,22 @@
                 </div>
             </a>
 
-            <a href="https://github.com/Solayman/bongo-php/blob/master/DOCUMENTATION.md" target="_blank" rel="noopener" class="resource-card">
+            <a href="https://github.com/nobotech-labs/bongo-php/blob/master/DOCUMENTATION.md" target="_blank" rel="noopener" class="resource-card">
                 <div>
                     <div class="resource-title">
                         <span>🐙 DOCUMENTATION.md</span>
                         <span>↗</span>
                     </div>
                     <p class="resource-desc">
-                        Direct link to the complete master Markdown documentation in the official Solayman/bongo-php Git repository.
+                        Direct link to the complete master Markdown documentation in the official nobotech-labs/bongo-php Git repository.
                     </p>
                 </div>
                 <div style="font-family: var(--font-mono); font-size: 0.725rem; color: var(--emerald-400); margin-top: 1rem;">
-                    github.com/Solayman/bongo-php
+                    github.com/nobotech-labs/bongo-php
                 </div>
             </a>
 
-            <a href="https://github.com/Solayman/bongo-php-packages" target="_blank" rel="noopener" class="resource-card">
+            <a href="https://github.com/nobotech-labs/bongo-php-packages" target="_blank" rel="noopener" class="resource-card">
                 <div>
                     <div class="resource-title">
                         <span>📦 Packages Repository</span>
@@ -588,7 +588,7 @@
                     </p>
                 </div>
                 <div style="font-family: var(--font-mono); font-size: 0.725rem; color: var(--emerald-400); margin-top: 1rem;">
-                    github.com/Solayman/bongo-php-packages
+                    github.com/nobotech-labs/bongo-php-packages
                 </div>
             </a>
         </div>

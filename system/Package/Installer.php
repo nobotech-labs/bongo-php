@@ -32,7 +32,7 @@ class Installer
             }
         }
 
-        $url = 'https://raw.githubusercontent.com/Solayman/bongo-php-packages/master/index.json';
+        $url = 'https://raw.githubusercontent.com/nobotech-labs/bongo-php-packages/master/index.json';
         $token = $this->resolveToken();
 
         $headers = ["User-Agent: Bongo-Package-Manager/" . Framework::version()];
@@ -461,7 +461,7 @@ class Installer
      */
     protected function downloadAndExtract(string $name, string $version, string $destDir): array
     {
-        $url = "https://api.github.com/repos/Solayman/bongo-php-packages/contents/$name?ref=master";
+        $url = "https://api.github.com/repos/nobotech-labs/bongo-php-packages/contents/$name?ref=master";
         $token = $this->resolveToken();
 
         $headers = [
@@ -481,7 +481,7 @@ class Installer
 
     protected function downloadGithubFolder(string $pkg, string $subPath, string $destDir, array $headers, array &$fileMap): void
     {
-        $apiPath = "https://api.github.com/repos/Solayman/bongo-php-packages/contents/{$pkg}" . ($subPath !== '' ? "/{$subPath}" : "") . "?ref=master";
+        $apiPath = "https://api.github.com/repos/nobotech-labs/bongo-php-packages/contents/{$pkg}" . ($subPath !== '' ? "/{$subPath}" : "") . "?ref=master";
 
         $context = stream_context_create([
             'http' => [
