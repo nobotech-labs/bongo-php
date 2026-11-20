@@ -42,7 +42,7 @@ The `release` branch provides a clean, production-ready starter skeleton (**~800
 
 ```bash
 # Clone the clean starter skeleton
-git clone -b release https://github.com/Solayman/bongo-php.git my-app && cd my-app
+git clone -b release https://github.com/nobotech-labs/bongo-php.git my-app && cd my-app
 
 # Configure environment (MySQL, PostgreSQL, or SQLite)
 cp .env.example .env        # Windows: copy .env.example .env
@@ -59,7 +59,7 @@ php bongo serve             # Listening on http://127.0.0.1:8000
 The demo e-commerce store (admin dashboard + storefront), the blog and the package consoles live in a separate testbed repository, so the framework itself stays clean:
 
 ```bash
-git clone https://github.com/Solayman/bongo-package-and-feature-test.git testbed && cd testbed
+git clone https://github.com/nobotech-labs/bongo-package-and-feature-test.git testbed && cd testbed
 cp .env.example .env
 php bongo key:generate
 php bongo migrate
@@ -248,7 +248,7 @@ Architectural trade-offs compared objectively across common PHP ecosystems:
 ### Current Architectural Boundaries
 * **Supported Databases:** Native first-class support for **MySQL / MariaDB**, **PostgreSQL (`pgsql`)**, and **SQLite**.
 * **Queue Drivers:** High-reliability Database and Redis queue drivers are built in (with delayed retry sets and failed job tracking).
-* **Official Package Ecosystem:** Zero-dependency package manager (`System\Package`) and official package suite (`sslcommerz`, `bkash`, `nagad`, `stripe`, `sms`, `s3`, `social-login`, `two-factor`, `image`, `backup`, `permission`, `zip`, `ftp`, `paypal`, `api-tools`, `settings`, `seo`, `activity-log`, `health`, `file-manager`) in `Solayman/bongo-php-packages`. Standard web patterns can also integrate optional Composer packages.
+* **Official Package Ecosystem:** Zero-dependency package manager (`System\Package`) and official package suite (`sslcommerz`, `bkash`, `nagad`, `stripe`, `sms`, `s3`, `social-login`, `two-factor`, `image`, `backup`, `permission`, `zip`, `ftp`, `paypal`, `api-tools`, `settings`, `seo`, `activity-log`, `health`, `file-manager`) in `nobotech-labs/bongo-php-packages`. Standard web patterns can also integrate optional Composer packages.
 
 ---
 
@@ -264,7 +264,7 @@ Bongo includes 401 automated test cases, strict type hinting, regression suites,
 The framework provides an isolated upgrade utility (`php bongo upgrade`) that verifies cryptographic SHA-256 checksums, creates an automated pre-upgrade backup, and patches core `system/` components without touching application files. Upgrades can be reversed using `php bongo upgrade --rollback`.
 
 **Who maintains Bongo?**  
-Bongo is engineered and maintained by [Nobotech](https://nobotech.xyz) and open-sourced under the MIT License. Contributions and architectural discussions are welcome via [GitHub Issues](https://github.com/Solayman/bongo-php/issues) and [Pull Requests](https://github.com/Solayman/bongo-php/pulls).
+Bongo is engineered and maintained by [Nobotech](https://nobotech.org) and open-sourced under the MIT License. Contributions and architectural discussions are welcome via [GitHub Issues](https://github.com/nobotech-labs/bongo-php/issues) and [Pull Requests](https://github.com/nobotech-labs/bongo-php/pulls).
 
 ---
 
@@ -302,7 +302,7 @@ Bootstrap compilation reduced framework initialization latency from 17.3 ms to 1
 
 <div align="center">
 
-**[Documentation](DOCUMENTATION.md)** • **[Contribution Guidelines](CONTRIBUTING.md)** • **[Security Policy](SECURITY.md)** • **[Issue Tracker](https://github.com/Solayman/bongo-php/issues)**
+**[Documentation](DOCUMENTATION.md)** • **[Contribution Guidelines](CONTRIBUTING.md)** • **[Security Policy](SECURITY.md)** • **[Issue Tracker](https://github.com/nobotech-labs/bongo-php/issues)**
 
 <sub>Maintained by Nobotech · Distributed under the MIT License</sub>
 

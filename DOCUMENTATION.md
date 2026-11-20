@@ -2,9 +2,9 @@
 
 > 🌐 **Official Online Documentation Portal**: [https://bongo.nobotech.org](https://bongo.nobotech.org)  
 > 📦 **Official 50 Packages Directory**: [https://bongo.nobotech.org/packages](https://bongo.nobotech.org/packages)  
-> 🐙 **Packages Git Repository**: [https://github.com/Solayman/bongo-php-packages](https://github.com/Solayman/bongo-php-packages)  
+> 🐙 **Packages Git Repository**: [https://github.com/nobotech-labs/bongo-php-packages](https://github.com/nobotech-labs/bongo-php-packages)  
 > ⚡ **Empirical Benchmarks**: [https://bongo.nobotech.org/benchmarks](https://bongo.nobotech.org/benchmarks)  
-> 🐙 **Core Git Repository**: [https://github.com/Solayman/bongo-php](https://github.com/Solayman/bongo-php)
+> 🐙 **Core Git Repository**: [https://github.com/nobotech-labs/bongo-php](https://github.com/nobotech-labs/bongo-php)
 
 ---
 
@@ -35,7 +35,7 @@ Built in:
 | Packages | Zero-dependency package manager: `php bongo add / package:install / package:update / package:remove / package:list / package:publish / package:diff / package:test`, SHA-256 integrity verification, update safety net, app override priority; 24 official packages (`sslcommerz`, `bkash`, `nagad`, `aamarpay`, `stripe`, `paypal`, `two-factor`, `captcha`, `social-login`, `permission`, `sms`, `telegram`, `bangla-tools`, `s3`, `ftp`, `file-manager`, `image`, `zip`, `backup`, `api-tools`, `settings`, `seo`, `activity-log`, `health`) |
 | CLI | `php bongo serve / tinker / route:list / make:* / config:cache / config:clear / view:cache / view:clear / cache:clear / migrate / migrate:status / migrate:rollback / make:migration / db:seed / key:generate / log:clear / test`, plus custom console commands auto-discovery |
 
-The core framework ships clean and lightweight (~800 KB starter skeleton on `release`), containing pure authentication, dashboard, and system health status. The complete e-commerce store demo and full application sandbox are maintained in the dedicated official repository [`Solayman/bongo-package-and-feature-test`](https://github.com/Solayman/bongo-package-and-feature-test).
+The core framework ships clean and lightweight (~800 KB starter skeleton on `release`), containing pure authentication, dashboard, and system health status. The complete e-commerce store demo and full application sandbox are maintained in the dedicated official repository [`nobotech-labs/bongo-package-and-feature-test`](https://github.com/nobotech-labs/bongo-package-and-feature-test).
 
 ---
 
@@ -53,7 +53,7 @@ The core framework ships clean and lightweight (~800 KB starter skeleton on `rel
 ## 2. Quick start
 
 ```bash
-git clone https://github.com/Solayman/bongo-php.git && cd bongo-php
+git clone https://github.com/nobotech-labs/bongo-php.git && cd bongo-php
 cp .env.example .env              # Windows: copy .env.example .env
 # edit .env: APP_NAME, APP_URL, DB_* values
 php bongo key:generate          # writes APP_KEY to .env
@@ -2433,7 +2433,7 @@ gh release create vX.Y.Z dist/bongo-framework-X.Y.Z.json.gz dist/bongo-framework
 For direct end users starting a brand-new project without the demo e-commerce store or test suites, clone the dedicated `release` branch (**~800 KB**, 183 files):
 
 ```bash
-git clone -b release https://github.com/Solayman/bongo-php.git my-app
+git clone -b release https://github.com/nobotech-labs/bongo-php.git my-app
 cd my-app
 cp .env.example .env
 php bongo key:generate && php bongo migrate && php bongo serve
@@ -2527,7 +2527,7 @@ BONGO_PACKAGES_TOKEN=ghp_...
 # BONGO_PACKAGES_PATH=../bongo-php-packages
 ```
 
-### Official Packages Suite (`Solayman/bongo-php-packages`)
+### Official Packages Suite (`nobotech-labs/bongo-php-packages`)
 
 Bongo maintains an official package suite providing production-grade integrations for regional payment gateways, multi-driver SMS, cloud storage, social authentication, two-factor security, image optimization, and database backups:
 

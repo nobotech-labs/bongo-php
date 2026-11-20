@@ -53,13 +53,13 @@ Every notable change to the Bongo PHP Framework. Versions follow [semantic versi
 
 ### Added
 - **Internal Professional DevTools DebugBar (`System\Debug\DebugBar`) & `@debugbar` Template Directive**: Zero-dependency, dark-themed floating developer toolbar built directly into the framework core for real-time runtime inspection when `APP_DEBUG=true`. Features 7 inspection tabs: **Request** (method, path, action, headers, cookies, input), **Messages** (`Logger::getRecorded()` with severity pills), **Timeline** (boot duration, database query time, view render time, peak memory), **Views** (rendered templates hierarchy and passed variables), **Queries** (syntax-highlighted SQL, execution duration, copy query, and automated **N+1 repetition counters** flagging queries executed 3+ times), **Models** (hydrated model counts), and **Cache** (hits, misses, writes). Right-side status widgets include `⚡ OpCache` status, `🗄️ {RAM} MB`, `⏱️ {Time} ms`, and link to `/system`.
-- **Official Packages Suite Expansion to 24 Packages (`Solayman/bongo-php-packages`)**:
+- **Official Packages Suite Expansion to 24 Packages (`nobotech-labs/bongo-php-packages`)**:
   - `captcha` (1.0.0): Universal anti-bot human verification suite (Cloudflare Turnstile, Google reCAPTCHA v2/v3, hCaptcha, pure-PHP offline math & GD image challenges with replay protection and `@captcha` / `@captchascript` directives).
   - `aamarpay` (1.0.0): AamarPay payment gateway for Bangladesh with sandbox/live modes, MFS support (bKash, Nagad, Rocket, Upay), card processing, `TrxCheck` server validation, pre-built views, and `php bongo aamarpay:check` CLI command.
   - `telegram` (1.0.0): Real-time Telegram Bot notifications, rich system alerts with emojis and JSON details, channel broadcasts, `Telegram::fake()` unit testing, and `php bongo telegram:send` / `telegram:test` CLI utilities.
   - `bangla-tools` (1.0.0): Authentic Bengali linguistic toolkit (English <-> Bengali digit conversion, number-to-words engine with কোটি/লাখ/হাজার/শত, South Asian Taka currency notation, Bongabdo calendar converter according to Bangla Academy standards, Unicode cleaner, and SEO slug generator).
   - Package test suite expanded to **208 tests passing (853 assertions)** across all 24 packages with 0 errors.
-- **Decoupled Framework Core & Sandbox Migration**: Decoupled full e-commerce store demo application, customer portal, and storefront feature tests to the official sandbox repository [`Solayman/bongo-package-and-feature-test`](https://github.com/Solayman/bongo-package-and-feature-test), leaving `bongo-php` clean with starter authentication, dashboard, and system health status. Core framework tests: **353 tests passing (1,600 assertions)**.
+- **Decoupled Framework Core & Sandbox Migration**: Decoupled full e-commerce store demo application, customer portal, and storefront feature tests to the official sandbox repository [`nobotech-labs/bongo-package-and-feature-test`](https://github.com/nobotech-labs/bongo-package-and-feature-test), leaving `bongo-php` clean with starter authentication, dashboard, and system health status. Core framework tests: **353 tests passing (1,600 assertions)**.
 - **HTML Sanitization Subsystem (`System\Security\HtmlSanitizer`) & `clean_html()` Global Helper**: Pure-PHP, zero-dependency HTML sanitizer powered by native `DOMDocument` with UTF-8 envelope preservation for multilingual/Bengali scripts. Eliminates Stored Cross-Site Scripting (XSS) by stripping dangerous tags (`<script>`, `<iframe>`, `<style>`, `<svg>`, `<math>`, `<object>`, `<embed>`, `<applet>`), inline event attributes (`onload`, `onerror`, `onclick`), dangerous protocols (`javascript:`, `vbscript:`, unsafe `data:`), and CSS injection hacks (`expression`, `url()`), while preserving safe formatting, media (`img`), tables, and auto-enforcing `rel="noopener noreferrer"` on `target="_blank"` links.
 - **WebSocket Allowed Origins CLI Parameter**: Added `--origins=` / `--allowed-origins=` option to `php bongo websocket:serve` for deterministic command-line origin filtering across all operating systems.
 
@@ -75,7 +75,7 @@ Every notable change to the Bongo PHP Framework. Versions follow [semantic versi
   - `php bongo package:publish <name> [--config] [--views] [--lang]`
   - `php bongo package:diff <name>`
   - `php bongo package:test <name>`
-- **Official Bongo Packages Suite** (`Solayman/bongo-php-packages`):
+- **Official Bongo Packages Suite** (`nobotech-labs/bongo-php-packages`):
   - `sslcommerz` (1.0.0): SSLCommerz payment gateway for Bangladesh with token validation, sandbox/live modes, IPN handling, checkout views, translations, and `php bongo sslcommerz:check`.
   - `bkash` (1.0.0): bKash Tokenized Checkout payment gateway with token caching, payment execution, query, refund, checkout views, translations, and `php bongo bkash:check`.
   - `sms` (1.0.0): Multi-driver SMS gateway (BulkSMSBD, SSL Wireless, Alpha SMS, and log driver) with 6-digit cryptographic phone OTP generation, attempt throttling, verification, views, and natural Bengali localization.
@@ -137,7 +137,7 @@ Every notable change to the Bongo PHP Framework. Versions follow [semantic versi
 - **Translations moved from `lang/` to `resources/lang/`** (next to `resources/views/`). `php bongo package:publish <name> --lang` now copies to `resources/lang/vendor/<name>/`. A project that still has only a root `lang/` folder keeps working unchanged (`Lang::folder()` falls back to it); see UPGRADE.md.
 - PSR-12 formatting fixes in `Router.php` and `helpers.php` (back to 0 errors).
 - `BroadcastTest` no longer leaves `websocket:serve` processes running on Windows: it started them through `cmd.exe`, so stopping the test only stopped `cmd.exe`. The leftover servers also kept piped test output (`php bongo test | grep`) from ever finishing.
-- The framework is now called **Bongo PHP Framework**, made by Nobotech (formerly BongoMVC). The repository is `Solayman/bongo-php`.
+- The framework is now called **Bongo PHP Framework**, made by Nobotech (formerly BongoMVC). The repository is `nobotech-labs/bongo-php`.
 - Starter skeleton metrics and documentation synchronized: updated fresh starter skeleton documentation to reflect accurate footprint (~800 KB, 183 files) and documented direct end-user distribution via the `release` branch (`git clone -b release`).
 - Query values are bound with their real types (int, null, bool with native `\PDO::PARAM_BOOL` for pgsql).
 - Framework autoloader optimized with direct prefix checks (`strncmp`) and `is_file()` lookups.

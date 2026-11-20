@@ -10,7 +10,7 @@ return [
     'editor' => env('APP_EDITOR', 'vscode'),
 
     // php bongo upgrade: where to find the latest release, and a token for a private repository
-    'upgrade_url'   => env('UPGRADE_URL', 'https://api.github.com/repos/Solayman/bongo-php/releases/latest'),
+    'upgrade_url'   => env('UPGRADE_URL', 'https://api.github.com/repos/nobotech-labs/bongo-php/releases/latest'),
     'upgrade_token' => env('UPGRADE_TOKEN', ''),
 
     // Used by PHP dates, log timestamps and the MySQL session (e.g. Asia/Dhaka)
