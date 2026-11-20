@@ -105,7 +105,7 @@
                     <i class="bi bi-chevron-right text-muted"></i>
                 </a>
                 @endcan
-                <a href="https://github.com/Solayman/bongo-php" target="_blank" rel="noopener" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                <a href="https://github.com/nobotech-labs/bongo-php" target="_blank" rel="noopener" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
                     <div>
                         <div class="fw-medium">{{ __('GitHub Repository') }}</div>
                         <div class="small text-secondary">{{ __('Source code, docs and updates') }}</div>

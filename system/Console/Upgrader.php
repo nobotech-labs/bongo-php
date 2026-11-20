@@ -29,7 +29,7 @@ class Upgrader
     /** The latest release: [version, notes, package url, sha256 url] (GitHub's releases API by default) */
     public function latest(): array
     {
-        $url = (string) config('app.upgrade_url', 'https://api.github.com/repos/Solayman/bongo-php/releases/latest');
+        $url = (string) config('app.upgrade_url', 'https://api.github.com/repos/nobotech-labs/bongo-php/releases/latest');
         $release = json_decode($this->download($url), true);
         if (!is_array($release) || empty($release['tag_name'])) {
             throw new RuntimeException("No release found at $url");
